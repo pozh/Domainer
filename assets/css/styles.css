@@ -1,0 +1,257 @@
+/**
+ * Responsive HTML/CSS Template "Domain Seller"
+ * Author: Sergey Pozhilov
+ * Author URL: http://www.gettemplate.com
+ * Version: 1.0
+*/
+
+/* CONTENTS
+   1. Layout
+   2. Colors
+   3. Typography
+   4. Boxes, buttons, etc.
+   5. Forms
+   6. Bottom part, Footer
+   7. Mobile styles
+*/
+
+
+/*******************************************
+ *
+ *  1. Layout
+ *
+ *******************************************/
+body{ background-repeat:no-repeat; background-position: top center; background-attachment: fixed;}
+.container{ max-width: 980px; } /* Can be wider */
+
+.padding{ padding:0 2%; }
+
+#Head{ padding:49px 0 35px 0; }
+	#Action{ margin-top:8px; }
+
+#Stats{ padding:0 1.50306% 13px 1.50306%; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; margin-bottom:-14px; }
+	#Stats .col{ margin-left:0; background:url(../images/stats_div.png) no-repeat right 15px; padding:22px 0 25px 0; }
+	#Stats .col:last-child{ background:none; }
+	#Stats .span_3{ width:12.5%; }
+	#Stats .span_4{ width:16.666666666%; }
+	#Stats .span_6{ width:25%; }
+	#Stats .span_8{ width:33.333333333%; }
+	#Stats .span_12{ width:50%; }
+	#Stats.stats-ad{ padding:23px 1.50306% 7px 1.50306%; opacity:1;}
+	#Stats .value{ display:block; width:100%; text-align:center; margin:0 0 25px 0; line-height:1em; }
+	#Stats .info{ display:block; width:100%; text-align:center; }
+
+#Content{ -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; position: relative;  margin-bottom:-26px; z-index: 999;}
+	/*#Content .row{ padding:0 1.50306% 20px 1.50306%; }*/
+	#Content .special{ padding:30px 8%; margin:0 0 37px 0; }	
+#Content-end{ height:30px;  background:url(../images/bg_content_end.png); -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; opacity:0.9; z-index: 1; margin-bottom:10px; }
+#Add{ padding:15px 0; }
+	#Add hr{ height:3px; background:none; border-width:1px 0 0 0; border-color:#999; margin:0px 0 3px 0; }
+#Footer{ padding:0 1.50306%; margin-bottom: 40px;}
+	
+
+/*******************************************
+ *
+ *  2. Colors
+ *
+ *******************************************/
+body{ background-color: #1b1b1b; background-image: url(../images/bg.jpg); color: #444; }
+#Stats{ background:#CC333F; color:white; border-top:1px solid #D65963; }
+	#Stats *{ color:white; }
+	#Stats .value{ text-shadow:0 2px 1px #AD2B35;}
+	#Stats .info{ color: #F0C2C6; text-shadow:0 1px 0px #AD2B35;}
+#Content{ background:white; }
+
+:; hr{ border:solid #757575; }
+
+h1, h2, h3, h4, h5, h6 { color:#333; }
+h2.line{ border-bottom: 3px solid #eee; }
+a{ color: #CC333F; }
+
+#Domain, 
+#Domain a{ color:white; }
+#Domain span{ color:#ccc; }
+
+.special{ background: #eee; }
+	.special h3{ color:#999; text-shadow:1px 1px 1px #fff; }
+
+.circle{ background: #CC333F; -moz-box-shadow: inset 0px 1px 2px #6E161D; -webkit-box-shadow: inset 0px 1px 2px #6E161D; box-shadow: inset 0px 1px 2px #6E161D;}
+	.circle .icon{ color: white; text-shadow: 0 1px 2px #6e161d; }
+
+.with-icon{ color:#999; }
+	.with-icon .icon{ color:#FFDC73; }
+
+.btn, .box .btn { background-color: #CC333F; color: white; border-top:1px solid #D65963; }
+	.btn:hover, .box .btn:hover{ background-color: #FF4440 ;}
+.box{ background:#eee; }
+
+#Add-domains a.title,
+#Add-domains .more{ color:#ccc; }	
+	#Add-domains .action a,
+	#Add-domains a.title:hover{ color:#fff; }	
+
+select, textarea, input[type="text"]{ border:3px solid #e3e3e3; color: #555555; background-color: #ffffff; }
+textarea:focus,
+input[type="text"]:focus { border-color: #CC333F; }	
+.error{ background-color:#FFD1D1!important; }
+label span{ display:none; color:red; }
+
+
+#Footer{ color:#999; }
+#Footer a{ color:#aaa; }
+	#Footer a:hover{ color:#ccc; }
+
+
+/*******************************************
+ *
+ *  3. Typography
+ *
+ *******************************************/
+body{ font-family: Helvetica, Arial, sans-serif; line-height: 1.5em; font-size: 13px; }
+h1, h2, h3, h4, h5, h6 { font-family: "Open Sans", Helvetica, Arial, sans-serif; 
+                         padding-bottom: 3px; line-height: 1.2em; font-weight: 300; margin-bottom:15px;  }
+h1 { font-size: 29px; }
+h2 { font-size: 27px; }
+	h2.margin{ margin-bottom:40px; }
+h3 { font-size: 16px; font-weight:400; }
+h4 { font-size: 15px; }
+h5 { font-size: 14px; }
+h6 { font-size: 12px; }
+
+p{ margin: 0 0 15px 0; }
+ul{ margin: 0 0 15px 0; }
+
+a{ text-decoration: none; }
+#Content a:hover{ text-decoration: underline; }
+
+strong, b{ font-weight:bold; }
+
+.align-center{ text-align: center; }
+.align-left{ text-align: left; }
+.align-right{ text-align: right; }
+.align-justify{ text-align: justify; }
+
+
+
+/*******************************************
+ *
+ *  4. Boxes, Buttons, etc.
+ *
+ *******************************************/
+#Domain{ margin-bottom:0; font-size:38px; font-family: 'Open Sans', sans-serif; font-weight:bold;  }
+	#Domain a{  text-decoration: none; }
+	#Domain span{ display:block; margin-top:-12px; font-size:15px; text-transform: none; font-family: 'Open Sans', sans-serif; font-weight:normal; }
+
+#Stats{ }
+	#Stats .value{ font-size:48px; font-weight:bold; }
+	#Stats .info{ line-height:1.2em; font-weight:bold; font-style:normal; }
+	#Stats h1{ font-weight:bold; text-transform: uppercase; position:relative; top:-4px; margin-bottom:25px;}
+
+.special h3{ margin:0; font-style: italic; font-family: Georgia, "Times New Roman", Times, serif; font-size: 22px; }
+
+.with-icon{ text-indent: -39px; margin: 0 0 5px 39px;  }
+	.with-icon .icon{ margin:0.3em 6px -0.3em 0; }
+
+#Add h2{ color:white; border-bottom:none; margin-bottom: 15px; }
+
+.circle{ width:86px; height:86px; margin:0 auto 20px auto; -webkit-border-radius: 43px; -moz-border-radius: 43px; border-radius: 43px; 
+         text-align: center; line-height:66px; }
+	.circle .icon{ color: white; margin-left:4px; }
+
+.icon{ position: relative; top: 9px; font-size: 32px; margin: 0 4px 0 0;} 
+.btn { display: inline-block; *display: inline; padding: 4px 12px; line-height: 1em; font-size: 16.5px; text-decoration: none; text-align: center; vertical-align: middle; cursor: pointer; *zoom: 1; -webkit-border-radius: 30px; -moz-border-radius: 30px; border-radius: 30px; border:0 none; }
+	.btn:hover{ background-color: #FF4440;}
+.btn-icon{ padding: 6px 0 16px 0; font-size: 17.5px; }
+.btn-large { padding: 9px 35px; font-size: 15px; }
+.btn-block { display: block; width: 100%; padding-right: 0; padding-left: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.btn-small{  padding: 4px 18px; font-size: 11px; font-weight: bold; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; }
+
+.divider{ background: #1B1B1B; border:0 none; display: block; height:10px; margin:10px 0 30px 0;}
+
+.box{ padding:15px 15px 5px 15px; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; }
+.sample-banner{ background:#eee; border:1px solid #444; color:#333; text-align:center; display:inline-block; opacity:0.3; }
+
+
+/*******************************************
+ *
+ *  5. Forms
+ *
+ *******************************************/
+ #Offer{ padding:0 0 20px 0; }
+label, input, button, select, textarea { font-size: 12px; font-weight: normal;  line-height: 20px; }
+input, button, select, textarea { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+label { display: block;  margin-bottom: 5px; }
+
+select, textarea, input[type="text"]{ display: inline-block; 
+	height: 36px; padding: 4px 2%; margin-bottom: 15px; font-size: 14px; line-height: 20px; width: 100%; 
+	vertical-align: middle; }
+textarea{ height:auto; }
+textarea:focus,
+input[type="text"]:focus { outline: 0; }
+
+input[type="radio"], input[type="checkbox"] { margin: 4px 0 0; margin-top: 1px \9; *margin-top: 0; line-height: normal; }
+input[type="button"], input[type="radio"], input[type="checkbox"] {width: auto; }
+select{ *margin-top: 4px; line-height: 36px; }
+select { background-color: #ffffff; }
+
+/* Checkbox */
+input[type="checkbox"] {display:none; }
+input[type="checkbox"] + label { cursor:pointer; position:relative; top: 0.9em; }
+input[type="checkbox"] + label i {display:inline-block; width:19px; height:19px; cursor:pointer; margin:-1px 4px 0 0;
+                                     vertical-align:middle; background:url(../images/checkbox.png) left top no-repeat; }
+input[type="checkbox"]:checked + label i {background:url(../images/checkbox.png) -19px top no-repeat; }
+
+
+/* Special elements */
+#f_url{ display:none; }
+
+#Offer textarea{ height:198px; }
+#Offer .col{ margin-bottom:0; }	
+#msg, #error_msg{ margin-bottom:10px; display: none; }
+
+.subscribe{ float:left; width:50%; }
+
+/*******************************************
+ *
+ *  6. Bottom part, Footer
+ *
+ *******************************************/
+#Add-caption{ margin-bottom:30px; cursor: pointer; }
+	#Add-caption i{ display: inline-block; width:14px; height:1em; background: url(../images/btn_more.png) no-repeat 0 0.6em; margin:0 0 0 2px; cursor: pointer; }
+	#Add-caption i.invert{ background-position: -20px 0.6em; }
+
+#Add-domains{ }
+#Add-domains ul{ list-style:none; font-size:15px; }
+	#Add-domains li{ float:left; width: 32.0%; margin:0 0 6px 2%; }
+	#Add-domains li:nth-of-type(3n+1) { clear: left; margin-left:0; }
+		#Add-domains li .action{ float:right; }
+		#Add-domains a.title, 
+		#Add-domains .more{ font-weight:bold; text-decoration: none; clear:both; }
+		#Add-domains a.title:hover{ text-decoration: underline; }
+		#Add-domains .action a{ text-decoration: none; }
+	#More-domains li:last-child{ margin-bottom:15px; }
+		
+#Footer{ font-size:11px; font-weight: bold; }
+#Footer a{ text-decoration: none; }
+	#Footer a:hover{ text-decoration: underline; }
+
+
+
+/*******************************************
+ *
+ *  7. Mobile Styles
+ *
+ *******************************************/
+@media only screen and (max-width: 767px) {
+	#Head{ padding-top:20px; padding-bottom:15px; }
+		#Head h1{ margin:0 0 10px 0; font-size:26px; }
+	#Domain{ float: none; display:block; width:100%; text-align: center; margin-bottom:0; }
+	#Domain span{ line-height:1.2em; margin-top: 0; width:100%; text-align: center; }
+	#Action{ margin-top:0px; }
+
+	#Stats .col{ width:50%!important; background:none!important; }
+	#Stats .col:nth-child(odd){ clear:both!important; }
+
+	#Add-domains li{ width: 100%; margin:0 0 6px 0; }
+	#Footer .col{ text-align: center; }
+}

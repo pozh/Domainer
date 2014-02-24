@@ -1,0 +1,58 @@
+/**
+ * Color skin for the "Domain Seller" template
+ *
+ * If you are going to use it as default color, feel free 
+ * to move the entire section "Colors" to the "styles.css", 
+ * replacing the existing "Colors" section there
+ */
+
+
+/*******************************************
+ *
+ *  Colors
+ *
+ *******************************************/
+body{ color: #A2A2A2; }
+#Stats{ background:#23333D; border-top: 1px solid #405764; }
+	#Stats .value{ color:#678799; text-shadow:0 2px 1px #000;}
+	#Stats .info{ color: #9CBACA; text-shadow:0 1px 0px #000;}
+#Content{ background:#000; }
+#Content-end{ background:#111; }
+
+#Add hr{ border: 0 none; height:3px; background:#000; }
+
+h1, h2, h3, h4, h5, h6 { color:#FAFCFB; }
+h2.line{ border-bottom: 3px solid #333; }
+a{ color: #B3FAEA; }
+
+#Domain, 
+#Domain a{ color:white; }
+#Domain span{ color:#ccc; }
+
+.circle{ background: #FF8500; -moz-box-shadow: inset 0px 1px 2px #6E3D0F; -webkit-box-shadow: inset 0px 1px 2px #6E3D0F; box-shadow: inset 0px 1px 2px #6E3D0F;}
+	.circle .icon{ color: white; text-shadow: 0 1px 2px #6E3D0F; }
+
+.special{ background: #0B1316;  }
+	.special h3{ text-shadow:1px 1px 1px #000; color:#51626B;}
+
+.divider{ background-color: #0B1316; }	
+
+.with-icon{ color:#FAFCFB; }
+	.with-icon .icon{ color:#07767A; }
+
+.btn { background-color: #FF8500; color: white; }
+	.btn:hover{ background-color: #FFAD00;}
+
+.more-domains a.title{ color:#B3FAEA; font-weight:normal; }	
+	.more-domains .action a,
+	.more-domains a.title:hover{ color:#fff; }	
+
+select, textarea, input[type="text"]{ border:3px solid #162428; color: #999; background-color: #000; }
+textarea:focus,
+input[type="text"]:focus { border-color: #07767A; }	
+.error{ background-color:#414141!important; }
+label span{ display:none; color:#FFAC74; }
+
+#Footer{ color:#999; }
+#Footer a{ color:#aaa; }
+	#Footer a:hover{ color:#ccc; }

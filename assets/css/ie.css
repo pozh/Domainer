@@ -1,0 +1,16 @@
+/* CLEARFIX HACK */
+.row,
+.clr,
+.group							{ zoom: 1; } /* IE6 */
+
+*:first-child+html .row,
+*:first-child+html .clr,
+*:first-child+html .group		{ zoom: 1; } /* IE7 */
+
+/* Media queries degradation */
+body{ padding:0; }
+.container{ width: 980px; padding:0; }
+.more-domains li.nth{ clear: left; margin-left:0; }
+
+/* Few more corrections */
+.ie6 #Add-domains li, .ie7 #Add-domains li, .ie8 #Add-domains li{ width:30%; margin:0 2% 6px 0;}

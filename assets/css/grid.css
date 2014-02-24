@@ -1,0 +1,62 @@
+/*
+	24 COLUMN - RESPONSIVE GRID SYSTEM
+	DEVELOPED BY DENIS LEBLANC
+	URL - http://responsive.gs
+	VERSION - 2.0
+	LICENSED UNDER GPL & MIT
+	
+	RESET - ADAPTED FROM MEYER RESET
+	URL - http://meyerweb.com/eric/tools/css/reset/
+	LICENSE - PUBLIC DOMAIN
+*/
+
+/* RESET
+----------------------------------------------------------------------------------------------------*/
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, caption, canvas, center, cite, code,
+dd, del, details, dfn, dialog, div, dl, dt, em, embed, fieldset, figcaption, figure, form, footer, header, hgroup, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav,object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, tt, table, tbody, textarea, tfoot, thead, time, tr, th, td, u, ul, var, video  { 
+	font-family: inherit; font-size: 100%; font-weight: inherit; font-style: inherit; 
+	text-align: left;  vertical-align: baseline; white-space: normal;
+	margin: 0;  padding: 0;  border: 0;  outline: 0; background: transparent; }
+body{ -webkit-font-smoothing: antialiased; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block; } 
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+:focus { outline: 0; }
+table {border-collapse: collapse; border-spacing: 0; }
+
+/* GRID
+----------------------------------------------------------------------------------------------------*/
+
+/* 	SET ALL ELEMENTS BOX-SIZING TO BORDER-BOX
+	If you need support for IE7 and lower use polyfill: https://github.com/Schepp/box-sizing-polyfill */
+* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+.container { margin: 0 auto; padding:0 0%; }
+.row:after, .col:after, .clr:after, .group:after { content: ""; display: block; height: 0; clear: both; visibility: hidden; }
+
+.row{ width: 100%; *zoom: 1; } 
+.col { float:left; margin-left: 2%; }
+.col:first-child { margin-left: 0; }
+
+.span_1 { width: 2.25%; }       .span_2 { width: 6.5%; }       .span_3 { width: 10.75%; }      .span_4 { width: 15.0%; }
+.span_5 { width: 19.25%; }      .span_6 { width: 23.5%; }      .span_7 { width: 27.75%; }      .span_8 { width: 32.0%; }
+.span_9 { width: 36.25%; }      .span_10 { width: 40.5%; }     .span_11 { width: 44.75%; }     .span_12 { width: 49.0%; }
+.span_13 { width: 53.25%; }     .span_14 { width: 57.5%; }     .span_15 { width: 61.75%; }     .span_16 { width: 66.0%; }
+.span_17 { width: 70.25%; }     .span_18 { width: 74.5%; }     .span_19 { width: 78.75%; }     .span_20 { width: 83.0%; }
+.span_21 { width: 87.25%; }     .span_22 { width: 91.5%; }     .span_23 { width: 95.75%; }     .span_24 { width: 100%; }
+
+
+/* ON SMALL DISPLAYS */
+@media ( max-width : 767px ) {
+	body{ padding:0 10px; }
+	.col{ margin-left:0; }
+	.span_1, .span_2, .span_3, .span_4, .span_5, .span_6, .span_7, .span_8, .span_9, .span_10, .span_11, .span_12, .span_13, .span_14, 
+	.span_15, .span_16, .span_17, .span_18, .span_19, .span_20, .span_21, .span_22, .span_23, .span_24{ width: 100%; }
+}
+
+/* Paddings aroud content on small screens */
+@media ( min-width : 1010px ) { .container{ padding:0; } }
+
+@media ( max-width : 1000px ) {
+	body{ padding:0 10px; }
+}
